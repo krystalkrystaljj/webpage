@@ -1,0 +1,32 @@
+/* 样式重置 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+i, em{
+    font-style: normal;
+}
+
+input, textarea, button, select, a{
+    outline: none;
+    border: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    vertical-align: middle;
+}

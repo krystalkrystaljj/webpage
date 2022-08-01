@@ -1,0 +1,36 @@
+body {
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    display: block;
+    width: 196px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 50px 0 24px;
+    
+    font-size: 200%;
+    font-weight: bold;
+    text-align-last:justify;
+
+    font-family: poppin,Tahoma,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;
+    cursor: default;
+
+}
+
+ol li,ul li{
+    float: left;
+}
+
+a {
+    cursor: pointer;
+}
+
+.list a:hover {
+    color: #31c27c;
+}

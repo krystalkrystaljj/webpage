@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ音乐</title>
+    <link rel="stylesheet" href="../css/index.css">
+
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <div class="song_box">
+        <h2>用户ID:刘州</h2>
+        <div class="search">
+            <div class="singer">
+                <span>歌手：</span>
+                <input type="text" id="singerInfo">
+            </div>
+            <div class="song">
+                <span>歌曲：</span>
+                <input type="text" id="songInfo">
+            </div>
+            <button class="add" onclick="mysubmit()">添加</button>
+        </div>
+
+        <div class="getlist">
+            <h2>歌单列表获取</h2>
+            <button class="get" onclick="getSongs()">获取</button>
+            <div class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>序号</td>
+                            <td>歌名</td>
+                            <td>歌手</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul>
+                <li class="prev" onclick="toprev()">上一页</li>
+                <div class="page">
+                    <span id="currentPage"></span><span>/</span><span id="totalPage"></span>
+                </div>
+                <li class="next" onclick="tonext()">下一页</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    
+
+</script>

@@ -1,0 +1,96 @@
+.recom_list1 {
+    background-color: #FAFAFA;
+}
+
+.swiper {
+    position: relative;
+    height: 330px;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.swiper ul {
+    position: absolute;
+    left: 0;
+    width: 400%;
+    margin-right: -20px;
+
+
+    
+}
+.swiper ul li {
+    width: 224px;
+    height: 224px;
+    margin-right: 20px;
+}
+
+.swiper li a {
+    display: inline-block;
+    width: 224px;
+    height: 224px;
+}
+
+.swiper li img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper li h4 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.swiper li h4:hover {
+    color: #31c27c;
+}
+
+
+.playlist {
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+/* 箭头按钮的样式 */
+.arrow-l,.arrow-r{
+    display: none;
+    width: 79px;
+    height: 108px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 108px;
+    background: rgba(0, 0, 0, .2);
+
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    right:0;
+}
+.arrow-l {
+    left: 0;
+}
+
+/* 小圆圈样式 */
+.circle {
+    height: 30px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -47.97px;
+    z-index: 9;
+}
+.circle a {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #E1E1E1;
+    background-color: #E1E1E1;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle .current {
+    border: 2px solid #AFAFAF;
+    background-color: #AFAFAF;
+}
