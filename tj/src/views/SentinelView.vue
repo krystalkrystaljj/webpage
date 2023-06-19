@@ -8,21 +8,23 @@
           <el-button class="button" text>TOPSAR-SPLIT</el-button>
         </div>
       </template>
+      
+      
       <div>
         <!--下拉框-->
-        <el-select
-          v-model="value"
-          class="m-2"
-          placeholder="Select"
-          size="large"
-        >
-          <el-option
-            v-for="item in options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value"
-          />
-        </el-select>
+        <el-select 
+          v-model="value" 
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
+        <el-option
+          v-for="item in options"
+          :key="item.value"
+          :label="item.label"
+          :value="item.value">
+        </el-option>
+      </el-select>
 
         <!--分割留白-->
         <div class="divider"></div>
@@ -78,7 +80,12 @@
       </template>
 
       <span class="title">Digital Elevation Model：</span>
-      <el-select v-model="valueDEM" clearable placeholder="请选择">
+      <el-select 
+          v-model="valueDEM" 
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
         <el-option
           v-for="item in DEMoptions"
           :key="item.valueDEM"
@@ -89,7 +96,12 @@
       <br/>
 
       <span class="title">DEM Resampling Method：</span>
-      <el-select v-model="valueDEMRM" clearable placeholder="请选择">
+      <el-select 
+          v-model="valueDEMRM" 
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
         <el-option
           v-for="item in DEMRMoptions"
           :key="item.valueDEMRM"
@@ -100,7 +112,12 @@
       <br/>
 
       <span class="title">Resampling Type：</span>
-      <el-select v-model="valueRT" clearable placeholder="请选择">
+      <el-select
+          v-model="valueRT" 
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
         <el-option
           v-for="item in RToptions"
           :key="item.valueRT"
@@ -118,13 +135,18 @@
     <el-card class="box-card">
       <template #header>
         <div class="card-header">
-          <span>Card name</span>
+          <el-icon :style="{color:'skyblue'}"><Ship /></el-icon>
           <el-button class="button" text>Interferogram</el-button>
         </div>
       </template>
 
       <span class="title">Degree of "Flat Earth" polynomial：</span>
-      <el-select v-model="valueDFEP" clearable placeholder="请选择">
+      <el-select 
+          v-model="valueDFEP" 
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
         <el-option
           v-for="item in DFEPoptions"
           :key="item.valueDFEP"
@@ -135,7 +157,12 @@
       <br/>
 
       <span class="title">Number of "Flat Earth" estimation points：</span>
-      <el-select v-model="valueNFEEP" clearable placeholder="请选择">
+      <el-select 
+          v-model="valueNFEEP"
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
         <el-option
           v-for="item in NFEEPoptions"
           :key="item.valueNFEEP"
@@ -146,7 +173,12 @@
       <br/>
 
       <span class="title">Orbit interpolation degree：</span>
-      <el-select v-model="valueOID" clearable placeholder="请选择">
+      <el-select 
+          v-model="valueOID"
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
         <el-option
           v-for="item in OIDoptions"
           :key="item.valueOID"
@@ -160,31 +192,24 @@
   <el-divider />
 
   <!-- TOPSAR-Deburst模块 -->
-  <!-- <div class="tj-car-card">
-    <el-card class="box-card">
-      <template #header>
-        <div class="card-header">
-          <span>Card name</span>
-          <el-button class="button" text>TOPSAR-Deburst</el-button>
-        </div>
-      </template>
-      <div v-for="o in 4" :key="o" class="text item">
-        {{ "List item " + o }}
-      </div>
-    </el-card>
-  </div> -->
+
 
   <!-- TopoPhaseRemoval模块 -->
   <div class="tj-car-card">
     <el-card class="box-card">
       <template #header>
         <div class="card-header">
-          <span>Card name</span>
+          <el-icon :style="{color:'green'}"><MostlyCloudy /></el-icon>
           <el-button class="button" text>TopoPhaseRemoval</el-button>
         </div>
       </template>
       <span class="title">Digital Elevation Model：</span>
-      <el-select v-model="valueDEM_TOP" clearable placeholder="请选择">
+      <el-select 
+          v-model="valueDEM_TOP"
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
         <el-option
           v-for="item in DEM_TOPoptions"
           :key="item.valueDEM_TOP"
@@ -195,7 +220,12 @@
       <br/>
 
       <span class="title">Tile Extension[%]：</span>
-      <el-select v-model="valueTE" clearable placeholder="请选择">
+      <el-select 
+          v-model="valueTE"
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
         <el-option
           v-for="item in TEoptions"
           :key="item.valueTE"
@@ -211,16 +241,16 @@
     <el-card class="box-card">
       <template #header>
         <div class="card-header">
-          <span>Card name</span>
+          <el-icon :style="{color:'palevioletred'}"><Drizzling /></el-icon>
           <el-button class="button" text>Multilook</el-button>
         </div>
       </template>
-      <span>Number of Range Looks:</span>
-      <el-input v-model="range" placeholder="请输入内容"></el-input>
+      <span class="title">Number of Range Looks:</span>
+      <el-input v-model="range" size="large" class="m-2" placeholder="请输入内容"></el-input>
 
       <br/>
-      <span>Number of Azimuth Looks:</span>
-      <el-input v-model="azimuth" placeholder="请输入内容"></el-input>
+      <span class="title">Number of Azimuth Looks:</span>
+      <el-input v-model="azimuth" size="large" class="m-2" placeholder="请输入内容"></el-input>
 
     </el-card>
   </div>
@@ -230,12 +260,17 @@
     <el-card class="box-card">
       <template #header>
         <div class="card-header">
-          <span>Card name</span>
+          <el-icon :style="{color:'purple'}"><Moon /></el-icon>
           <el-button class="button" text>GoldsteinPhaseFiltering</el-button>
         </div>
       </template>
       <span class="title">FFT Sizes：</span>
-      <el-select v-model="valueFFT" clearable placeholder="请选择">
+      <el-select 
+          v-model="valueFFT"
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
         <el-option
           v-for="item in FFToptions"
           :key="item.valueFFT"
@@ -246,7 +281,12 @@
       <br/>
 
       <span class="title">Window Sizes：</span>
-      <el-select v-model="valueWIN" clearable placeholder="请选择">
+      <el-select 
+          v-model="valueWIN"
+          class="m-2" 
+          size="large" 
+          clearable 
+          placeholder="Select">
         <el-option
           v-for="item in WINoptions"
           :key="item.valueWIN"
@@ -269,6 +309,7 @@ export default {
   data() {
     //这里存放数据
     return {
+      // TOPSAR-SPLIT
       options: [
         {
           value: "Option1",
@@ -291,28 +332,32 @@ export default {
           label: "Option5",
         },
       ],
+      value:'',
+
+      // orb
       orboptions: [
         {
-          value: "Sentinel Precise (Auto Download)",
+          valueorb: "Sentinel Precise (Auto Download)",
           label: "Sentinel Precise (Auto Download)",
         },
         {
-          value: "Sentinel Restituted (Auto Download)",
+          valueorb: "Sentinel Restituted (Auto Download)",
           label: "Sentinel Restituted (Auto Download)",
         },
         {
-          value: "DORIS Preliminary POR (ENVISAT)",
+          valueorb: "DORIS Preliminary POR (ENVISAT)",
           label: "DORIS Preliminary POR (ENVISAT)",
         },
         {
-          value: "DORIS Precise VOR (ENVISAT) (Auto Download)",
+          valueorb: "DORIS Precise VOR (ENVISAT) (Auto Download)",
           label: "DORIS Precise VOR (ENVISAT) (Auto Download)",
         },
         {
-          value: "DELFT Precise (ENVISAT, ERS1&2) (Auto Download)",
+          valueorb: "DELFT Precise (ENVISAT, ERS1&2) (Auto Download)",
           label: "DELFT Precise (ENVISAT, ERS1&2) (Auto Download)",
         },
       ],
+      valueorb:'',
       // Back-Geocoding模块
       DEMoptions:[
        {
@@ -578,6 +623,10 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.m-2{
+  width: 450px;
+
 }
 
 .text {
