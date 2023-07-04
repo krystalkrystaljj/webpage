@@ -16,13 +16,13 @@
       <template #title>工作台</template>
       <el-sub-menu index="2-1">
         <template #title>普通遥感数据</template>
-        <el-menu-item index="2-1-1">双景处理</el-menu-item>
-        <el-menu-item index="2-1-2">时序处理</el-menu-item>
+        <router-link to="/noDouble"><el-menu-item index="2-1-1">双景处理</el-menu-item></router-link>
+        <router-link to="/noTiming"><el-menu-item index="2-1-2">时序处理</el-menu-item></router-link>
       </el-sub-menu>
 
       <el-sub-menu index="2-2">
         <template #title>哨兵</template>
-        <el-menu-item index="2-2-1">双景处理</el-menu-item>
+        <router-link to="/Double"><el-menu-item index="2-2-1">双景处理</el-menu-item></router-link>
         <el-menu-item index="2-2-2">时序处理</el-menu-item>
       </el-sub-menu>
     </el-sub-menu>

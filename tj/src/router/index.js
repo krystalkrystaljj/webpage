@@ -1,11 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
-const SentinelView = () => import('../views/SentinelView');
+const SentinelDoubleView = () => import('../views/sentinel/SentinelDoubleView');
+const NosentinelDoubleView = () => import('../views/remoteSensing/NosentinelDoubleView');
+const NosentinelTimingView = () => import('../views/remoteSensing/NosentinelTimingView');
 
 const routes = [
   {
-    path: '/',
-    name: 'sentinel',
-    component: SentinelView
+    path: '/Double',
+    component: SentinelDoubleView
+  },
+  {
+    path: '/noDouble',
+    component: NosentinelDoubleView
+  },
+  {
+    path: '/noTiming',
+    component: NosentinelTimingView
   },
   // {
   //   path: '/about',
