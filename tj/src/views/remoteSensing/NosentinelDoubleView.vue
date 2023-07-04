@@ -179,7 +179,7 @@
   </div>
 
   <el-row>
-    <el-button>提交</el-button>
+    <el-button class="btn">提交</el-button>
   </el-row>
 </template>
 
@@ -190,95 +190,95 @@ export default {
       //DEM-Assisted-Coregistration
       DEMoptions: [
         {
-          valueDEM: "选项1",
+          valueDEM: "CDEM (Auto Download)",
           label: "CDEM (Auto Download)",
         },
         {
-          valueDEM: "选项2",
+          valueDEM: "Copernicus 30m Global dem (Auto Download)",
           label: "Copernicus 30m Global dem (Auto Download)",
         },
         {
-          valueDEM: "选项3",
+          valueDEM: "Copernicus 90m Global dem (Auto Download)",
           label: "Copernicus 90m Global dem (Auto Download)",
         },
         {
-          valueDEM: "选项4",
+          valueDEM: "GETASSE30 (Auto Download)",
           label: "GETASSE30 (Auto Download)",
         },
         {
-          valueDEM: "选项5",
+          valueDEM: "SRTM 1Sec Grid",
           label: "SRTM 1Sec Grid",
         },
         {
-          valueDEM: "选项6",
+          valueDEM: "SRTM 1Sec HGT (Auto Download)",
           label: "SRTM 1Sec HGT (Auto Download)",
         },
         {
-          valueDEM: "选项7",
+          valueDEM: "SRTM 3Sec (Auto Download)",
           label: "SRTM 3Sec (Auto Download)",
         },
         {
-          valueDEM: "选项8",
+          valueDEM: "External DEM",
           label: "External DEM",
         },
       ],
       DEMRMoptions: [
         {
-          valueDEMRM: "选项1",
+          valueDEMRM: "NEAREST_NEIGHBOUR",
           label: "NEAREST_NEIGHBOUR",
         },
         {
-          valueDEMRM: "选项2",
+          valueDEMRM: "BILINEAR_INTERPOLATION",
           label: "BILINEAR_INTERPOLATION",
         },
         {
-          valueDEMRM: "选项3",
+          valueDEMRM: "CUBIC_CONVOLUTION",
           label: "CUBIC_CONVOLUTION",
         },
         {
-          valueDEMRM: "选项4",
+          valueDEMRM: "BISINC_5_POINT_INTERPOLATION",
           label: "BISINC_5_POINT_INTERPOLATION",
         },
         {
-          valueDEMRM: "选项5",
+          valueDEMRM: "BISINC_11_POINT_INTERPOLATION",
           label: "BISINC_11_POINT_INTERPOLATION",
         },
         {
-          valueDEMRM: "选项6",
+          valueDEMRM: "BISINC_21_POINT_INTERPOLATION",
           label: "BISINC_21_POINT_INTERPOLATION",
         },
         {
-          valueDEMRM: "选项7",
+          valueDEMRM: "BICUBIC_INTERPOLATTON",
           label: "BICUBIC_INTERPOLATTON",
         },
       ],
       RToptions: [
         {
-          valueRT: "选项1",
+          valueRT: "NEAREST_NEIGHBOUR",
           label: "NEAREST_NEIGHBOUR",
         },
         {
-          valueRT: "选项2",
+          valueRT: "BILINEAR_INTERPOLATION",
           label: "BILINEAR_INTERPOLATION",
         },
         {
-          valueRT: "选项3",
+          valueRT: "CUBIC_CONVOLUTION",
           label: "CUBIC_CONVOLUTION",
         },
         {
-          valueRT: "选项4",
+          valueRT: "BISINC_5_POINT_INTERPOLATION",
           label: "BISINC_5_POINT_INTERPOLATION",
         },
         {
-          valueRT: "选项5",
+          valueRT: "BISINC_11_POINT_INTERPOLATION",
           label: "BISINC_11_POINT_INTERPOLATION",
         },
         {
-          valueRT: "选项6",
+          valueRT: "BISINC_21_POINT_INTERPOLATION",
           label: "BISINC_21_POINT_INTERPOLATION",
         },
         {
-          valueRT: "选项7",
+          valueRT: "BICUBIC_INTERPOLATTON",
           label: "BICUBIC_INTERPOLATTON",
         },
       ],
@@ -289,91 +289,91 @@ export default {
       //interfergotam模块
       DFEPoptions: [
         {
-          valueDFEP: "选项1",
+          valueDFEP: "1",
           label: "1",
         },
         {
-          valueDFEP: "选项2",
+          valueDFEP: "2",
           label: "2",
         },
         {
-          valueDFEP: "选项3",
+          valueDFEP: "3",
           label: "3",
         },
         {
-          valueDFEP: "选项4",
+          valueDFEP: "4",
           label: "4",
         },
         {
-          valueDFEP: "选项5",
+          valueDFEP: "5",
           label: "5",
         },
         {
-          valueDFEP: "选项6",
+          valueDFEP: "6",
           label: "6",
         },
         {
-          valueDFEP: "选项7",
+          valueDFEP: "7",
           label: "7",
         },
         {
-          valueDFEP: "选项8",
+          valueDFEP: "8",
           label: "8",
         },
       ],
       NFEEPoptions: [
         {
-          valueNFEEP: "选项1",
+          valueNFEEP: "301",
           label: "301",
         },
         {
-          valueNFEEP: "选项2",
+          valueNFEEP: "401",
           label: "401",
         },
         {
-          valueNFEEP: "选项3",
+          valueNFEEP: "501",
           label: "501",
         },
         {
-          valueNFEEP: "选项4",
+          valueNFEEP: "601",
           label: "601",
         },
         {
-          valueNFEEP: "选项5",
+          valueNFEEP: "701",
           label: "701",
         },
         {
-          valueNFEEP: "选项6",
+          valueNFEEP: "801",
           label: "801",
         },
         {
-          valueNFEEP: "选项7",
+          valueNFEEP: "901",
           label: "901",
         },
         {
-          valueNFEEP: "选项7",
+          valueNFEEP: "1001",
           label: "1001",
         },
       ],
       OIDoptions: [
         {
-          valueOID: "选项1",
+          valueOID: "1",
           label: "1",
         },
         {
-          valueOID: "选项2",
+          valueOID: "2",
           label: "2",
         },
         {
-          valueOID: "选项3",
+          valueOID: "3",
           label: "3",
         },
         {
-          valueOID: "选项4",
+          valueOID: "4",
           label: "4",
         },
         {
-          valueOID: "选项5",
+          valueOID: "5",
           label: "5",
         },
       ],

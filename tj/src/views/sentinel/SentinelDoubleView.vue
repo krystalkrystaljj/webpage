@@ -441,79 +441,99 @@ export default {
         valueRT:'',
       
       //interfergotam模块
-      DFEPoptions:[
-       {
-          valueDFEP: '选项1',
-          label: '1'
-        }, {
-          valueDFEP: '选项2',
-          label: '2'
-        }, {
-          valueDFEP: '选项3',
-          label: '3'
-        }, {
-          valueDFEP: '选项4',
-          label: '4'
-        }, {
-          valueDFEP: '选项5',
-          label: '5'
-        },{
-          valueDFEP: '选项6',
-          label: '6'
-        },{
-          valueDFEP: '选项7',
-          label: '7'
-        },{
-          valueDFEP: '选项8',
-          label: '8'
+      DFEPoptions: [
+        {
+          valueDFEP: "1",
+          label: "1",
+        },
+        {
+          valueDFEP: "2",
+          label: "2",
+        },
+        {
+          valueDFEP: "3",
+          label: "3",
+        },
+        {
+          valueDFEP: "4",
+          label: "4",
+        },
+        {
+          valueDFEP: "5",
+          label: "5",
+        },
+        {
+          valueDFEP: "6",
+          label: "6",
+        },
+        {
+          valueDFEP: "7",
+          label: "7",
+        },
+        {
+          valueDFEP: "8",
+          label: "8",
         },
       ],
       NFEEPoptions: [
         {
-          valueNFEEP: '选项1',
-          label: '301'
-        }, {
-          valueNFEEP: '选项2',
-          label: '401'
-        }, {
-          valueNFEEP: '选项3',
-          label: '501'
-        }, {
-          valueNFEEP: '选项4',
-          label: '601'
-        }, {
-          valueNFEEP: '选项5',
-          label: '701'
-        }, {
-          valueNFEEP: '选项6',
-          label: '801'
-        }, {
-          valueNFEEP: '选项7',
-          label: '901'
-        }, {
-          valueNFEEP: '选项7',
-          label: '1001'
-        }],
+          valueNFEEP: "301",
+          label: "301",
+        },
+        {
+          valueNFEEP: "401",
+          label: "401",
+        },
+        {
+          valueNFEEP: "501",
+          label: "501",
+        },
+        {
+          valueNFEEP: "601",
+          label: "601",
+        },
+        {
+          valueNFEEP: "701",
+          label: "701",
+        },
+        {
+          valueNFEEP: "801",
+          label: "801",
+        },
+        {
+          valueNFEEP: "901",
+          label: "901",
+        },
+        {
+          valueNFEEP: "1001",
+          label: "1001",
+        },
+      ],
       OIDoptions: [
         {
-          valueOID: '选项1',
-          label: '1'
-        }, {
-          valueOID: '选项2',
-          label: '2'
-        }, {
-          valueOID: '选项3',
-          label: '3'
-        }, {
-          valueOID: '选项4',
-          label: '4'
-        }, {
-          valueOID: '选项5',
-          label: '5'
-        }],
-      valueDFEP: '',
-      valueNFEEP: '',
-      valueOID:'',
+          valueOID: "1",
+          label: "1",
+        },
+        {
+          valueOID: "2",
+          label: "2",
+        },
+        {
+          valueOID: "3",
+          label: "3",
+        },
+        {
+          valueOID: "4",
+          label: "4",
+        },
+        {
+          valueOID: "5",
+          label: "5",
+        },
+      ],
+      valueDFEP: "",
+      valueNFEEP: "",
+      valueOID: "",
 
       //TopoPhaseRemoval模块
       DEM_TOPoptions:[
