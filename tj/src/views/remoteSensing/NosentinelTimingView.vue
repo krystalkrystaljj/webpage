@@ -241,6 +241,10 @@
       </el-select>
     </el-card>
   </div>
+
+  <el-row>
+    <el-button class="btn" @click="submit">提交</el-button>
+  </el-row>
 </template>
 
 <script>
@@ -441,8 +445,103 @@ export default {
       valueDFEP: "",
       valueNFEEP: "",
       valueOID: "",
+
+      //TopoPhaseRemoval模块
+      DEM_TOPoptions:[
+       {
+          valueDEM_TOP: '选项1',
+          label: 'CDEM (Auto Download)'
+        }, {
+          valueDEM_TOP: '选项2',
+          label: 'Copernicus 30m Global DEM (Auto Download)'
+        }, {
+          valueDEM_TOP: '选项3',
+          label: 'Copernicus 90m Global DEM (Auto Download)'
+        }, {
+          valueDEM_TOP: '选项4',
+          label: 'GETASSE30 (Auto Download)'
+        }, {
+          valueDEM_TOP: '选项5',
+          label: 'SRTM 1Sec Grid'
+        },{
+          valueDEM_TOP: '选项6',
+          label: 'SRTM 1Sec HGT (Auto Download)'
+        },{
+          valueDEM_TOP: '选项7',
+          label: 'SRTM 3Sec (Auto Download)'
+        },{
+          valueDEM_TOP: '选项8',
+          label: 'External DEM'
+        },
+      ],
+      TEoptions: [
+        {
+          valueTE: '选项1',
+          label: '20'
+        }, {
+          valueTE: '选项2',
+          label: '40'
+        }, {
+          valueTE: '选项3',
+          label: '60'
+        }, {
+          valueTE: '选项4',
+          label: '80'
+        }, {
+          valueTE: '选项5',
+          label: '100'
+        }, {
+          valueTE: '选项6',
+          label: '150'
+        }, {
+          valueTE: '选项7',
+          label: '200'
+        }],
+        valueDEM_TOP:'',
+        valueTE:'',
+
+
+      //Multilook模块
+      range:'null',
+      azimuth:'null',
+
+      //GoldsteinPhaseFiltering模块
+      FFToptions: [
+        {
+          valueFFT: '选项1',
+          label: '32'
+        }, {
+          valueFFT: '选项2',
+          label: '64'
+        }, {
+          valueFFT: '选项3',
+          label: '128'
+        }, {
+          valueFFT: '选项4',
+          label: '256'
+        }],
+      WINoptions: [
+        {
+          valueOID: '选项1',
+          label: '3'
+        },{
+          valueOID: '选项2',
+          label: '5'
+        }, {
+          valueOID: '选项3',
+          label: '7'
+        }],
+      valueFFT: '',
+      valueWIN: '',
     };
   },
+
+  methods:{
+    submit() {
+      const num = this.DEMoptions + this.valueDEMRM
+      console.log(num);
+    }
+  }
 };
 </script>
 
@@ -484,5 +583,11 @@ export default {
 
 .divider {
   margin-bottom: 20px;
+}
+
+.btn{
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 </style>

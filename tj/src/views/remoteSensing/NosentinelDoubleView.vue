@@ -1,4 +1,5 @@
 <template>
+
   <!-- DEM-Assisted-Coregistration -->
   <div class="tj-car-card">
     <el-card class="box-card">
@@ -176,6 +177,10 @@
       </el-select>
     </el-card>
   </div>
+
+  <el-row>
+    <el-button>提交</el-button>
+  </el-row>
 </template>
 
 <script>
@@ -526,5 +531,11 @@ export default {
 
 .divider {
   margin-bottom: 20px;
+}
+
+.btn{
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 </style>

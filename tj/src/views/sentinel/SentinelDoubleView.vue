@@ -296,6 +296,10 @@
       </el-select>
     </el-card>
   </div>
+
+  <el-row >
+    <el-button class="btn" @click="submit">提交</el-button>
+  </el-row>
 </template>
 
 <script>
@@ -605,7 +609,11 @@ export default {
   //监控data中的数据变化
   watch: {},
   //方法集合
-  methods: {},
+  methods: {
+    submit() {
+      
+    }
+  },
   //生命周期 - 创建完成（可以访问当前this实例）
   created() {},
   //生命周期 - 挂载完成（可以访问DOM元素）
@@ -653,5 +661,10 @@ export default {
 
 .divider {
   margin-bottom: 20px;
+}
+.btn{
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 </style>
