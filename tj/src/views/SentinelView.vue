@@ -52,16 +52,16 @@
         <!--分割留白-->
         <div class="divider"></div>
         <el-select
-          v-model="value"
+          v-model="valueorb"
           class="m-2"
           placeholder="Select"
           size="large"
         >
           <el-option
             v-for="item in orboptions"
-            :key="item.value"
+            :key="item.valueorb"
             :label="item.label"
-            :value="item.value"
+            :value="item.valueorb"
           />
         </el-select>
       </div>
